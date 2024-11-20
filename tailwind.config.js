@@ -10,7 +10,11 @@ module.exports = {
   ],
   darkMode: "selector",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+
+      },
+    },
   },
   plugins: [],
 }
