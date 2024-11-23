@@ -16,13 +16,13 @@ const Navbar = () => {
 
 
     return (
-        <nav className='sticky top-0 bg-white dark:bg-gray-700 '>
-            <div className='hidden md:block md:w-auto p-1 text-sm font-bold text-gray-600 dark:text-gray-200 '>
+        <nav className='sticky top-0'>
+            <div className='hidden md:block md:w-auto p-1 text-sm font-bold'>
                 <div className="flex justify-center items-center space-x-4 mr-2">
                     <Link className='relative block rounded-lg p-2 transition hover:scale-125 hover:text-violet-500 dark:hover:text-yellow-200' href="/">Experiencia</Link>
                     <Link className='relative block rounded-lg p-2 transition hover:scale-125 hover:text-violet-500 dark:hover:text-yellow-200' href="/">Proyectos</Link>
-                    <Link className='relative block rounded-lg p-2 transition hover:scale-125 hover:text-violet-500 dark:hover:text-yellow-200' href="/">Sobre mí</Link>
-                    <Link className='relative block rounded-lg p-2 transition hover:scale-125 hover:text-violet-500 dark:hover:text-yellow-200' href="/">Contáctame</Link>
+                    <Link className='relative block rounded-lg p-2 transition hover:scale-125 hover:text-violet-500 dark:hover:text-yellow-200' href="#about-me">Sobre mí</Link>
+                    <Link className='relative block rounded-lg p-2 transition hover:scale-125 hover:text-violet-500 dark:hover:text-yellow-200' href="mailto:cintya.olivares.c@gmail.com">Contáctame</Link>
                     <ThemeToggle />
                 </div>
             </div>
@@ -42,11 +42,11 @@ const Navbar = () => {
             </div>
             {isOpen && (
                  
-                 <div className=" md:hidden text-sm mx-4 font-bold text-gray-600 dark:text-gray-200 ">
-                     <Link className='relative block py-2 transition hover:scale-110 hover:bg-yellow-100   dark:hover:text-rose-300' href="/">Experiencia</Link>
-                     <Link className='relative block  py-2 transition hover:scale-110 hover:bg-yellow-100 dark:hover:text-rose-300' href="/">Proyectos</Link>
-                     <Link className='relative block py-2 transition hover:scale-110 hover:bg-yellow-100 dark:hover:text-rose-300' href="/">Sobre mí</Link>
-                     <Link className='relative block py-2 transition hover:scale-110 hover:bg-yellow-100 dark:hover:text-rose-300' href="/">Contacto</Link>
+                 <div className=" md:hidden text-sm mx-4 font-bold">
+                     <Link className='relative block rounded-lg p-2 transition hover:scale-110 hover:text-violet-500 dark:hover:text-yellow-200' href="/">Experiencia</Link>
+                    <Link className='relative block rounded-lg p-2 transition hover:scale-110 hover:text-violet-500 dark:hover:text-yellow-200' href="/">Proyectos</Link>
+                    <Link className='relative block rounded-lg p-2 transition hover:scale-110 hover:text-violet-500 dark:hover:text-yellow-200' href="/">Sobre mí</Link>
+                    <Link className='relative block rounded-lg p-2 transition hover:scale-110 hover:text-violet-500 dark:hover:text-yellow-200' href="/">Contáctame</Link>
 
                  </div>
              
